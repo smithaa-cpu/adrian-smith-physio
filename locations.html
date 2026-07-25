@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinic Locations | Adrian Smith Physiotherapy</title>
+  <meta name="description" content="Find Adrian Smith's physiotherapy clinic locations and book an appointment." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="brand-name">Adrian Smith</span>
+        <span class="brand-tagline">Registered Physiotherapist</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="specialties.html">Specialties</a></li>
+        <li><a href="locations.html">Clinic Locations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Clinic Locations</p>
+          <h2>Where you can book an appointment</h2>
+          <p>I currently see patients at the following clinic(s). Replace these cards with your real locations, hours, and booking links.</p>
+        </div>
+
+        <div class="card-grid">
+          <div class="location-card">
+            <h3 class="placeholder">[Clinic Name]</h3>
+            <p class="location-meta placeholder">[Street Address, City, Province, Postal Code]</p>
+            <p class="location-meta placeholder">[Phone Number]</p>
+            <p class="location-meta placeholder">[Hours, e.g. Mon–Fri 8am–6pm]</p>
+            <div class="location-actions">
+              <a href="#" class="btn btn-primary placeholder">Book Online</a>
+              <a href="#" class="btn btn-outline placeholder">Get Directions</a>
+            </div>
+          </div>
+
+          <div class="location-card">
+            <h3 class="placeholder">[Second Clinic Name, if applicable]</h3>
+            <p class="location-meta placeholder">[Street Address, City, Province, Postal Code]</p>
+            <p class="location-meta placeholder">[Phone Number]</p>
+            <p class="location-meta placeholder">[Hours]</p>
+            <div class="location-actions">
+              <a href="#" class="btn btn-primary placeholder">Book Online</a>
+              <a href="#" class="btn btn-outline placeholder">Get Directions</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="placeholder-note" style="margin-top: 22px; display:block;">
+          Tip: delete the second card if you only work out of one clinic, or duplicate it for more.
+          "Book Online" should link to your clinic's real booking system (e.g. Jane App, or the
+          clinic's own booking page) once you have it.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer">
+      <span>© <span id="year"></span> Adrian Smith Physiotherapy. All rights reserved.</span>
+      <span><a href="contact.html">Contact</a></span>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Adrian Smith Physiotherapy</title>
+  <meta name="description" content="Get in touch with Adrian Smith Physiotherapy." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="brand-name">Adrian Smith</span>
+        <span class="brand-tagline">Registered Physiotherapist</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="specialties.html">Specialties</a></li>
+        <li><a href="locations.html">Clinic Locations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Get In Touch</p>
+          <h2>Questions before you book?</h2>
+          <p>Send a message directly, or reach out through one of my clinic locations.</p>
+        </div>
+
+        <div class="contact-grid" style="margin-bottom: 40px;">
+          <div class="contact-item" style="background:var(--color-surface); border-color:var(--color-border); color:var(--color-ink);">
+            <h4>Email</h4>
+            <a href="mailto:info@adriansmithphysio.ca" style="color:var(--color-primary);">info@adriansmithphysio.ca</a>
+          </div>
+          <div class="contact-item" style="background:var(--color-surface); border-color:var(--color-border); color:var(--color-ink);">
+            <h4>Phone</h4>
+            <a href="tel:+10000000000" class="placeholder">[Add phone number]</a>
+          </div>
+          <div class="contact-item" style="background:var(--color-surface); border-color:var(--color-border); color:var(--color-ink);">
+            <h4>Clinics</h4>
+            <a href="locations.html" style="color:var(--color-primary);">View all locations →</a>
+          </div>
+        </div>
+
+        <p class="placeholder-note" style="display:block; margin-bottom: 8px;">
+          Note: this page currently uses a plain "mailto:" link, which opens the visitor's own
+          email app — no backend or form service required. If you'd rather have an actual
+          on-page contact form later, that's an easy add (e.g. via a free service like
+          Formspree) once you're ready.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer">
+      <span>© <span id="year"></span> Adrian Smith Physiotherapy. All rights reserved.</span>
+      <span><a href="contact.html">Contact</a></span>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

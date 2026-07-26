@@ -54,10 +54,8 @@ a {
 
 /* ---------- Placeholder marker ---------- */
 .placeholder {
-  background: #fff6e5;
-  border: 1px dashed var(--color-accent);
-  border-radius: 6px;
-  padding: 0 4px;
+  font-style: italic;
+  color: var(--color-ink-soft);
 }
 
 .placeholder-note {
@@ -308,10 +306,25 @@ section {
   margin: 0;
 }
 
+.bio-text {
+  max-width: 68ch;
+}
+
+.bio-text p {
+  color: var(--color-ink-soft);
+  font-size: 1.02rem;
+  line-height: 1.75;
+  margin: 0 0 18px;
+}
+
+.bio-text p:last-child {
+  margin-bottom: 0;
+}
+
 /* ---------- Cards ---------- */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -476,8 +489,9 @@ section {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  max-width: 640px;
 }
 
 @media (max-width: 900px) {
